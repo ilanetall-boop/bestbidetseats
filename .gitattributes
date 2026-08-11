@@ -1,0 +1,3 @@
+tools/ export-ignore
+data/ export-ignore
+.gitattributes export-ignore
