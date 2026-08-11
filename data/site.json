@@ -1,0 +1,79 @@
+{
+  "site": {
+    "name": "Best Bidet Seats",
+    "domain": "bestbidetseats.com",
+    "base_url": "https://bestbidetseats.com",
+    "affiliate_tag": "bestbidettoilets-20",
+    "author": "Ilane Tall",
+    "template": "premium-editorial-v1",
+    "static_pages": [
+      { "path": "", "priority": "1.0" },
+      { "path": "guides", "priority": "0.6" },
+      { "path": "about", "priority": "0.3" },
+      { "path": "contact", "priority": "0.3" },
+      { "path": "privacy", "priority": "0.3" }
+    ]
+  },
+  "articles": [
+    {
+      "slug": "electric-vs-non-electric-bidet-seats",
+      "title": "Electric vs Non-Electric Bidet Seats: Which Should You Buy?",
+      "description": "Warm water and heated seats versus simplicity and price — the honest trade-offs, and who should pick which.",
+      "category": "Comparison",
+      "hero": "hero-electric-vs-non-electric",
+      "minutes": 14,
+      "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "how-to-install-a-bidet-seat",
+      "title": "How to Install a Bidet Seat (20-Minute DIY Guide)",
+      "description": "The step-by-step walkthrough — T-valve, mounting, leak check — and the mistakes that cause drips. No plumber.",
+      "category": "How-to",
+      "hero": "hero-install",
+      "minutes": 13,
+      "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "are-bidet-seats-worth-it",
+      "title": "Are Bidet Seats Worth It? Hygiene, Savings & Comfort, Honestly",
+      "description": "The hygiene case, the toilet-paper savings math by budget tier, and the downsides nobody mentions.",
+      "category": "Honest take",
+      "hero": "hero-worth-it",
+      "minutes": 13,
+      "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "heated-bidet-seats-warm-water-guide",
+      "title": "Heated Bidet Seats & Warm Water: What's Actually Worth Paying For",
+      "description": "Reservoir vs instant vs hybrid heaters, decoded — and who can skip warm water entirely.",
+      "category": "Buying advice",
+      "hero": "hero-heated",
+      "minutes": 12,
+      "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "best-budget-bidet-seats-under-100",
+      "title": "The Best Budget Bidet Seats & Attachments Under $100",
+      "description": "What you get — and give up — at $30 and $90, backed by 35,000+ verified owner reviews.",
+      "category": "Budget picks",
+      "hero": "hero-budget",
+      "minutes": 13,
+      "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "bidet-seat-fit-guide-round-vs-elongated",
+      "title": "Will a Bidet Seat Fit Your Toilet? Round vs Elongated",
+      "description": "How to measure your bowl before you buy — the #1 return reason, avoided in five minutes.",
+      "category": "Fit guide",
+      "hero": "hero-fit-guide",
+      "minutes": 12,
+      "date": "2026-08-11",
+      "featured": true
+    }
+  ]
+}

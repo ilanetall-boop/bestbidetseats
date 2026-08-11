@@ -24,12 +24,14 @@ We started from every bidet seat and attachment in our database rated 4.0★+ wi
 
 ## Guides
 
-- [Electric vs Non-Electric Bidet Seats](https://bestbidetseats.com/electric-vs-non-electric-bidet-seats): the definitive trade-off comparison.
-- [How to Install a Bidet Seat](https://bestbidetseats.com/how-to-install-a-bidet-seat): 20-minute DIY walkthrough, no plumber.
-- [Round vs Elongated Fit Guide](https://bestbidetseats.com/bidet-seat-fit-guide-round-vs-elongated): measure before you buy.
-- [Are Bidet Seats Worth It?](https://bestbidetseats.com/are-bidet-seats-worth-it): hygiene, savings math, honest downsides.
-- [Best Budget Bidet Seats Under $100](https://bestbidetseats.com/best-budget-bidet-seats-under-100): the $30 and $90 picks.
-- [Heated Seats & Warm Water Guide](https://bestbidetseats.com/heated-bidet-seats-warm-water-guide): reservoir vs instant vs hybrid.
+<!--LLMS-GUIDES:START-->
+- [Are Bidet Seats Worth It? Hygiene, Savings & Comfort, Honestly](https://bestbidetseats.com/are-bidet-seats-worth-it): The hygiene case, the toilet-paper savings math by budget tier, and the downsides nobody mentions.
+- [The Best Budget Bidet Seats & Attachments Under $100](https://bestbidetseats.com/best-budget-bidet-seats-under-100): What you get — and give up — at $30 and $90, backed by 35,000+ verified owner reviews.
+- [Will a Bidet Seat Fit Your Toilet? Round vs Elongated](https://bestbidetseats.com/bidet-seat-fit-guide-round-vs-elongated): How to measure your bowl before you buy — the #1 return reason, avoided in five minutes.
+- [Electric vs Non-Electric Bidet Seats: Which Should You Buy?](https://bestbidetseats.com/electric-vs-non-electric-bidet-seats): Warm water and heated seats versus simplicity and price — the honest trade-offs, and who should pick which.
+- [Heated Bidet Seats & Warm Water: What's Actually Worth Paying For](https://bestbidetseats.com/heated-bidet-seats-warm-water-guide): Reservoir vs instant vs hybrid heaters, decoded — and who can skip warm water entirely.
+- [How to Install a Bidet Seat (20-Minute DIY Guide)](https://bestbidetseats.com/how-to-install-a-bidet-seat): The step-by-step walkthrough — T-valve, mounting, leak check — and the mistakes that cause drips. No plumber.
+<!--LLMS-GUIDES:END-->
 
 ## About
 
