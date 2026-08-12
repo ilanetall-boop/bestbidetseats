@@ -142,6 +142,9 @@ const imgs = new Set(fs.existsSync(path.join(ROOT, 'images')) ? fs.readdirSync(p
 const pages = new Set(htmlFiles.map(f => f.replace(/\.html$/, '')));
 const forbidden = /we tested|we've tested|hands-on|after testing|in our testing|I tested|our testing lab/i;
 const honestNeg = /don'?t run a (fake )?testing lab|no testing lab|don'?t physically test|do not physically test|not a (staged )?["']?lab|rather than a staged/gi;
+/* Generic hardening (ported from the espresso build): a daily runner can only be
+   trusted if the gate catches template drift, not just forbidden claims. */
+const MIN_WORDS = 2000;
 let failures = 0;
 const report = [];
 
@@ -166,6 +169,15 @@ for (const f of htmlFiles) {
   const deadAnchors = [...new Set([...h.matchAll(/href="#([^"]+)"/g)].map(x => x[1]))].filter(a => !ids.has(a));
   if (deadAnchors.length) probs.push('DEAD ANCHORS: #' + deadAnchors.join(', #'));
   if (f !== '404.html' && !/As an Amazon Associate/.test(h)) probs.push('MISSING Amazon Associates disclosure');
+  const isArticle = DATA.articles.some(a => a.slug + '.html' === f);
+  if (isArticle) {
+    const words = h.replace(/<(script|style)[\s\S]*?<\/\1>/g, ' ').replace(/<[^>]+>/g, ' ')
+      .replace(/&[a-z]+;/g, ' ').split(/\s+/).filter(Boolean).length;
+    if (words < MIN_WORDS) probs.push(`TOO SHORT: ${words} words (min ${MIN_WORDS})`);
+    if (!/<style id="a11y">/.test(h)) probs.push('MISSING a11y style block (template drift)');
+    if (!/hero-[a-z-]+\.webp/.test(h)) probs.push('MISSING hero image');
+    if (!/"@type"\s*:\s*"Article"/.test(h)) probs.push('MISSING Article JSON-LD');
+  }
   report.push((probs.length ? '  FAIL  ' : '  ok    ') + f.padEnd(48) + probs.join(' | '));
   if (probs.length) failures++;
 }

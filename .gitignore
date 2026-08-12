@@ -1,0 +1,2 @@
+# premium-daily.js writes its Claude task file into the repo root
+.premium-task-*.md
