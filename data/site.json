@@ -7,11 +7,26 @@
     "author": "Ilane Tall",
     "template": "premium-editorial-v1",
     "static_pages": [
-      { "path": "", "priority": "1.0" },
-      { "path": "guides", "priority": "0.6" },
-      { "path": "about", "priority": "0.3" },
-      { "path": "contact", "priority": "0.3" },
-      { "path": "privacy", "priority": "0.3" }
+      {
+        "path": "",
+        "priority": "1.0"
+      },
+      {
+        "path": "guides",
+        "priority": "0.6"
+      },
+      {
+        "path": "about",
+        "priority": "0.3"
+      },
+      {
+        "path": "contact",
+        "priority": "0.3"
+      },
+      {
+        "path": "privacy",
+        "priority": "0.3"
+      }
     ]
   },
   "articles": [
@@ -73,6 +88,16 @@
       "hero": "hero-fit-guide",
       "minutes": 12,
       "date": "2026-08-11",
+      "featured": true
+    },
+    {
+      "slug": "bidet-seat-vs-bidet-attachment",
+      "title": "Bidet Seat vs Bidet Attachment: Which One Should You Actually Buy?",
+      "description": "One replaces your toilet seat, the other slides under it for a third of the price. What you gain, what you give up, and who should buy which.",
+      "category": "Comparison",
+      "hero": "hero-bidet-seat-vs-bidet-attachment",
+      "minutes": 15,
+      "date": "2026-08-12",
       "featured": true
     }
   ]
