@@ -112,20 +112,26 @@ async function cf(method, urlPath, body) {
   let ACC = process.env.CF_ACCOUNT_ID || creds().account_id || null;
   if (!ACC) { const accounts = await cf('GET', '/accounts'); if (!accounts.length) die('token cannot list /accounts and no account_id in env/creds'); ACC = accounts[0].id; }
   console.log('      account ' + ACC);
-  let exists = true;
-  try { await cf('GET', `/accounts/${ACC}/pages/projects/${PROJECT}`); }
+  let exists = true, project = null;
+  try { project = await cf('GET', `/accounts/${ACC}/pages/projects/${PROJECT}`); }
   catch (e) { if (/8000007|not.found/i.test(e.message)) exists = false; else throw e; }
   if (!exists) {
     console.log(`      creating project ${PROJECT}`);
     if (!DRY) await cf('POST', `/accounts/${ACC}/pages/projects`, { name: PROJECT, production_branch: 'master' });
   } else console.log('      project already exists');
+  /* Deploy to the project's OWN production branch. A project created from the
+     dashboard defaults to "main"; uploading with --branch master then produces a
+     PREVIEW deployment and the apex silently keeps serving the previous build —
+     exactly what happened to bestbidetseats on the first premium-daily run. */
+  const BRANCH = (project && project.production_branch) || 'master';
+  console.log('      production branch: ' + BRANCH);
 
   /* 4. Upload (wrangler handles the direct-upload JWT + hashing). */
   console.log('[4/6] upload');
   if (!DRY) {
     process.env.CLOUDFLARE_API_TOKEN = TOKEN;
     process.env.CLOUDFLARE_ACCOUNT_ID = ACC;
-    sh(`npx --yes wrangler pages deploy "${OUT}" --project-name ${PROJECT} --branch master --commit-dirty=true`, { cwd: ROOT });
+    sh(`npx --yes wrangler pages deploy "${OUT}" --project-name ${PROJECT} --branch ${BRANCH} --commit-dirty=true`, { cwd: ROOT });
   }
 
   /* 5. Custom domain (apex). */

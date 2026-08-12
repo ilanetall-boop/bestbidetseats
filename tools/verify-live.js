@@ -52,6 +52,20 @@ const abs = u => u.startsWith('http') ? u : ORIGIN + (u.startsWith('/') ? u : '/
   if (!urls.length) return bad('sitemap.xml has no <loc> entries'), process.exit(1);
   ok(`sitemap.xml parses, ${urls.length} URLs`);
 
+  /* The served sitemap is not proof that THIS build is live. Cross-check it against
+     the local source of truth: a deploy that lands on the wrong branch (or never
+     lands) leaves the newest articles missing here while everything else passes. */
+  const localSlugs = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'site.json'), 'utf8'))
+    .articles.map(a => a.slug);
+  const liveSlugs = new Set(urls.map(u => u.replace(/^https?:\/\/[^/]+\//, '').replace(/\/$/, '')));
+  const missing = localSlugs.filter(s => !liveSlugs.has(s));
+  if (missing.length) bad(`data/site.json articles NOT in the live sitemap (stale deploy?): ${missing.join(', ')}`);
+  else ok(`all ${localSlugs.length} site.json articles are in the live sitemap`);
+  for (const s of missing) {
+    const st = await head(ORIGIN + '/' + s);
+    bad(`/${s} -> ${st} (built locally, not served)`);
+  }
+
   /* 2-3, 6-7: fetch every page once and run the content checks */
   const titles = new Map();
   const images = new Set();
