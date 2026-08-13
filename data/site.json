@@ -99,6 +99,16 @@
       "minutes": 15,
       "date": "2026-08-12",
       "featured": true
+    },
+    {
+      "slug": "how-to-clean-and-maintain-a-bidet-seat",
+      "title": "How to Clean and Maintain a Bidet Seat (Without Wrecking It)",
+      "description": "Nozzle cleaning, descaling in hard-water homes, what never to spray on the plastic, and the quick-release trick that makes the whole job painless.",
+      "category": "How-to",
+      "hero": "hero-how-to-clean-and-maintain-a-bidet-seat",
+      "minutes": 12,
+      "date": "2026-08-13",
+      "featured": true
     }
   ]
 }
