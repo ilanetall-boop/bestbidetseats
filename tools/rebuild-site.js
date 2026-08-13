@@ -48,6 +48,16 @@ const header = (idx.match(/<header class="site">[\s\S]*?<\/header>/) || [null])[
 const footer = (idx.match(/<footer class="site">[\s\S]*?<\/footer>/) || [null])[0];
 if (!style || !a11y || !header || !footer) { console.error('FATAL: cannot extract template parts from index.html'); process.exit(1); }
 
+
+/* One contextual card to a sibling site in the network (Art. 4: contextual,
+   varied anchor, nofollow — never a sitewide footer farm). Data lives in
+   site.json so this survives every regeneration. */
+function networkCard() {
+  const n = SITE.network_card;
+  if (!n) return '';
+  return `<a class="gcard" href="${n.href}" rel="nofollow noopener" target="_blank"><span class="gbody"><span class="eyebrow" style="color:var(--brass-text)">${n.category}</span><h2 class="serif">${n.title}</h2><p>${n.description}</p><span class="gmeta">Another independent guide from the same team</span></span></a>`;
+}
+
 /* ---------------- 1. guides.html ---------------- */
 function guideCard(a) {
   return `<a class="gcard" href="/${a.slug}"><span class="gimg"><img src="/images/${a.hero}.webp" alt="" width="1600" height="900" loading="lazy" decoding="async"></span><span class="gbody"><span class="eyebrow" style="color:var(--brass-text)">${esc(a.category)}</span><h2 class="serif">${esc(a.title)}</h2><p>${esc(a.description)}</p><span class="gmeta">By ${SITE.author} · Updated ${fmtDate(a.date)} · ${a.minutes} min read</span></span></a>`;
@@ -96,6 +106,7 @@ ${header}
 <div class="archive-hero"><div class="wrap"><span class="eyebrow">The library</span><h1 class="serif">All guides &amp; comparisons</h1><p>Every article on ${SITE.name} — research-based, honest, and kept current. New guides are added regularly.</p></div></div>
 <div class="wrap"><div class="glist">
 ${ARTICLES.map(guideCard).join('\n')}
+${networkCard()}
 </div></div>
 ${footer}
 </body>

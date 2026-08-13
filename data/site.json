@@ -27,7 +27,13 @@
         "path": "privacy",
         "priority": "0.3"
       }
-    ]
+    ],
+    "network_card": {
+      "href": "https://besttoiletseats.com/",
+      "category": "From our network",
+      "title": "Toilet seats, compared just as carefully",
+      "description": "Once the bidet question is settled, the seat under it still matters — soft-close, heated, elongated."
+    }
   },
   "articles": [
     {
