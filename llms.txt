@@ -1,26 +1,26 @@
 # Best Bidet Seats
 
-> Independent, research-based comparisons of bidet toilet seats and attachments for US bathrooms. We compare published specs, live pricing, and thousands of verified Amazon owner reviews. We do not physically test products and we never invent ratings.
+> Independent, research-based comparisons of bidet toilet seats and attachments for US bathrooms. We compare published specifications, live pricing, and the documented failure patterns of this product class. We do not physically test products and we never invent ratings.
 
 ## Top picks (2026)
 
-- **Best overall — LEIVI Electric Bidet Seat (~$240, 4.5★, 1,430 ratings):** instant warm water, heated seat, and a wireless remote for about half the luxury price. The no-regrets default for most people.
-- **Best premium — Bio Bidet BB2000 Bliss (~$489, 4.5★, 3,500 ratings):** the most-reviewed high-end seat; stainless nozzle, powerful wash, hybrid instant heating.
-- **Best value — Heated Bidet Seat with LED Display (~$170, 4.4★, 565 ratings):** heated seat and warm water under $175; reservoir heater, no remote.
-- **Best design — ALPHA BIDET UX Pearl (~$449, 4.5★, 639 ratings):** low-profile, quiet, endless warm water; feels like a fixture, not a gadget.
-- **Best non-electric — Brondell Swash Ecoseat (~$90, 4.3★, 10,541 ratings):** dual nozzles, adjustable pressure, no electricity needed; cold water only.
-- **Best budget — SAMODRA Non-Electric Attachment (~$30, 4.4★, 25,178 ratings):** the most-reviewed product in the category; clamps under your existing seat, 20-minute install, no outlet.
+- **Best overall — Kohler PureWash E580 ($269.97):** hybrid heater delivering continuously warm water (not a 30-second reservoir), front and rear wash, oscillating and turbo spray, self-cleaning stainless wand. The no-regrets default for most people.
+- **Best premium — TOTO WASHLET S2 ($420.00):** instantaneous water heating, heated SoftClose seat, warm-air dryer, air deodorizer, plus PREMIST bowl-wetting and EWATER+ electrolyzed-water wand cleaning that no competitor bundles.
+- **Best with a remote — VOVO VB-6000SE ($299.00):** wireless remote instead of a side panel; 3 levels of heated seat, warm water and dryer; 5 levels of nozzle position and pressure; LED nightlight. Made in Korea.
+- **Warm water without an outlet — TUSHY Spa 3.0 ($149.00):** a non-electric attachment that tees into the sink's hot line and mixes cool-to-warm at a dial. Must be installed beside a sink; no heated seat or dryer.
+- **Best non-electric seat — VOVO Nature 7 ($74.00):** full seat replacement, soft-close lid, no added height and no wobble; ambient (cold) water only. The Nature 8 is the round-bowl twin at the same price.
+- **Best budget — LUXE Bidet NEO 185 ($49.99):** dual rear and feminine wash behind a guard gate, metal-ceramic valve cores and braided steel hoses; clamps under your existing seat, ~20-minute install, no outlet.
 
 ## How to choose
 
 - **Heater type:** "instant" (tankless) gives endless warm water; "reservoir" runs lukewarm after ~30 seconds.
 - **Fit:** measure round vs elongated bowl; every electric pick fits standard elongated toilets.
-- **Power:** electric seats need a nearby GFCI outlet; non-electric options need none.
+- **Power:** electric seats need a nearby GFCI outlet; non-electric options need none. The one way to get warm water without an outlet is a sink-fed mixing attachment (TUSHY Spa 3.0).
 - **Controls:** a wireless remote is the upgrade owners mention most, over side panels.
 
 ## Method
 
-We started from every bidet seat and attachment in our database rated 4.0★+ with a meaningful review count, filtered for the features owners reward, and favored a deep, consistent review history. All ratings come from verified Amazon buyers.
+We started from every bidet seat and attachment in our database, then weighted for what decides satisfaction in this category: heater type (continuous vs a 30-second reservoir), a self-cleaning wand, published fit dimensions for round vs elongated bowls, and a manufacturer with a parts channel and a support line. We publish rating figures only where we hold verified per-product data — we hold none for the current picks, so this guide shows specifications and prices rather than invented stars. We do not physically test products.
 
 ## Guides
 
