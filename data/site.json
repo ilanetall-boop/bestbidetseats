@@ -115,6 +115,16 @@
       "minutes": 12,
       "date": "2026-08-13",
       "featured": true
+    },
+    {
+      "slug": "do-bidet-seats-need-an-electrical-outlet",
+      "title": "Do Bidet Seats Need an Electrical Outlet? The Honest Answer",
+      "description": "Electric seats need a GFCI outlet within a few feet of the toilet. What to do when your bathroom doesn't have one — and the non-electric options that need nothing.",
+      "category": "Buying advice",
+      "hero": "hero-do-bidet-seats-need-an-electrical-outlet",
+      "minutes": 12,
+      "date": "2026-08-16",
+      "featured": true
     }
   ]
 }
