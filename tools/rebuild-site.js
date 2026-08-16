@@ -186,7 +186,7 @@ for (const f of htmlFiles) {
       .replace(/&[a-z]+;/g, ' ').split(/\s+/).filter(Boolean).length;
     if (words < MIN_WORDS) probs.push(`TOO SHORT: ${words} words (min ${MIN_WORDS})`);
     if (!/<style id="a11y">/.test(h)) probs.push('MISSING a11y style block (template drift)');
-    if (!/hero-[a-z-]+\.webp/.test(h)) probs.push('MISSING hero image');
+    if (!/hero-[a-z0-9-]+\.webp/.test(h)) probs.push('MISSING hero image');
     if (!/"@type"\s*:\s*"Article"/.test(h)) probs.push('MISSING Article JSON-LD');
   }
   report.push((probs.length ? '  FAIL  ' : '  ok    ') + f.padEnd(48) + probs.join(' | '));
