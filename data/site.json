@@ -145,6 +145,16 @@
       "minutes": 14,
       "date": "2026-08-18",
       "featured": true
+    },
+    {
+      "slug": "bidet-seat-water-pressure-and-nozzle-guide",
+      "title": "Bidet Water Pressure and Nozzles, Explained",
+      "description": "Pressure dials, oscillating nozzles, posterior vs feminine wash and self-cleaning tips — what the spec sheet means when you're actually sitting there.",
+      "category": "Buying advice",
+      "hero": "hero-bidet-seat-water-pressure-and-nozzle-guide",
+      "minutes": 14,
+      "date": "2026-08-19",
+      "featured": true
     }
   ]
 }
