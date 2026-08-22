@@ -175,6 +175,16 @@
       "minutes": 15,
       "date": "2026-08-21",
       "featured": true
+    },
+    {
+      "slug": "what-does-a-bidet-seat-cost-to-run",
+      "title": "What Does a Bidet Seat Actually Cost to Run?",
+      "description": "Electricity, water and filters, worked out with every assumption on the table — plus the toilet-paper savings that offset them, honestly calculated.",
+      "category": "Honest take",
+      "hero": "hero-what-does-a-bidet-seat-cost-to-run",
+      "minutes": 14,
+      "date": "2026-08-22",
+      "featured": true
     }
   ]
 }
