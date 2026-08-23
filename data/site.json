@@ -185,6 +185,16 @@
       "minutes": 14,
       "date": "2026-08-22",
       "featured": true
+    },
+    {
+      "slug": "self-cleaning-nozzles-and-hygiene-features-explained",
+      "title": "Self-Cleaning Nozzles and Bidet Hygiene Features, Explained",
+      "description": "Nozzle rinses, sterilisation claims, antimicrobial plastics and UV — which hygiene features do something measurable and which are marketing.",
+      "category": "Buying advice",
+      "hero": "hero-self-cleaning-nozzles-and-hygiene-features-explained",
+      "minutes": 12,
+      "date": "2026-08-23",
+      "featured": true
     }
   ]
 }
