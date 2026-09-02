@@ -225,6 +225,16 @@
       "minutes": 13,
       "date": "2026-09-01",
       "featured": true
+    },
+    {
+      "slug": "what-hard-water-does-to-a-bidet-seat",
+      "title": "What Hard Water Does to a Bidet Seat (and How to Stop It)",
+      "description": "Scale builds on the nozzle, the valve and the heater. Here is where it forms first, and the routine that keeps a seat working past year three.",
+      "category": "Guide",
+      "hero": "hero-what-hard-water-does-to-a-bidet-seat",
+      "minutes": 14,
+      "date": "2026-09-02",
+      "featured": true
     }
   ]
 }
