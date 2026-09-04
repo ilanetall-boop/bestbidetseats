@@ -245,6 +245,16 @@
       "minutes": 15,
       "date": "2026-09-03",
       "featured": true
+    },
+    {
+      "slug": "best-bidet-seats-for-elongated-toilets",
+      "title": "The Best Bidet Seats for Elongated Toilets",
+      "description": "Most American toilets are elongated, and most seats are sold for both shapes. Which ones actually fit properly.",
+      "category": "Buying guide",
+      "hero": "hero-best-bidet-seats-for-elongated-toilets",
+      "minutes": 13,
+      "date": "2026-09-04",
+      "featured": true
     }
   ]
 }
