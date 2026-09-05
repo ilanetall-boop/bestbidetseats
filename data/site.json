@@ -255,6 +255,16 @@
       "minutes": 13,
       "date": "2026-09-04",
       "featured": true
+    },
+    {
+      "slug": "best-luxury-bidet-seats",
+      "title": "The Best Luxury Bidet Seats",
+      "description": "Above $250 the feature list stops growing and the engineering starts. What the money actually buys.",
+      "category": "Buying guide",
+      "hero": "hero-best-luxury-bidet-seats",
+      "minutes": 14,
+      "date": "2026-09-05",
+      "featured": true
     }
   ]
 }
