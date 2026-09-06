@@ -265,6 +265,16 @@
       "minutes": 14,
       "date": "2026-09-05",
       "featured": true
+    },
+    {
+      "slug": "bidet-seat-vs-washlet-what-is-the-difference",
+      "title": "Bidet Seat vs Washlet: Is There Actually a Difference?",
+      "description": "Washlet is a TOTO trademark, not a category. What that means when you compare across brands.",
+      "category": "Guide",
+      "hero": "hero-bidet-seat-vs-washlet-what-is-the-difference",
+      "minutes": 12,
+      "date": "2026-09-06",
+      "featured": true
     }
   ]
 }
