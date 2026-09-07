@@ -275,6 +275,16 @@
       "minutes": 12,
       "date": "2026-09-06",
       "featured": true
+    },
+    {
+      "slug": "bidet-seat-controls-side-panel-vs-remote",
+      "title": "Side Panel or Remote? Choosing How You Control a Bidet Seat",
+      "description": "The control type decides how the seat feels every single day, and it is the spec buyers think about least.",
+      "category": "Comparison",
+      "hero": "hero-bidet-seat-controls-side-panel-vs-remote",
+      "minutes": 14,
+      "date": "2026-09-07",
+      "featured": true
     }
   ]
 }

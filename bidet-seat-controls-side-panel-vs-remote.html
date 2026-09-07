@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Side Panel or Remote? Choosing How You Control a Bidet Seat</title>
+<meta name="description" content="The control type decides how the seat feels every single day, and it is the spec buyers think about least.">
+<link rel="canonical" href="https://bestbidetseats.com/bidet-seat-controls-side-panel-vs-remote">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Bidet Seats">
+<meta property="og:title" content="Side Panel or Remote? Choosing How You Control a Bidet Seat">
+<meta property="og:description" content="The control type decides how the seat feels every single day, and it is the spec buyers think about least.">
+<meta property="og:url" content="https://bestbidetseats.com/bidet-seat-controls-side-panel-vs-remote">
+<meta name="theme-color" content="#08191C">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F2F5F4; --surface:#FFFFFF; --surface-2:#E9F0EF;
+    --ink:#0B2125; --ink-soft:#254247; --muted:#5C7278; --line:#DBE6E4;
+    --aqua:#0FA39E; --aqua-deep:#0A7A76; --aqua-tint:#DCF0EF;
+    --brass:#A9803A; --brass-lite:#CFA666; --brass-tint:#F4EBDA;
+    --dark:#08191C; --dark-2:#0C282C; --on-dark:#EAF3F1; --on-dark-mute:#8FB0AE;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(11,33,37,.05),0 22px 48px -26px rgba(11,33,37,.30);
+    --shadow-sm:0 1px 2px rgba(11,33,37,.05),0 10px 24px -16px rgba(11,33,37,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#071417; --surface:#0C2226; --surface-2:#0F2A2E;
+    --ink:#EAF3F1; --ink-soft:#C4D8D5; --muted:#8FA9A7; --line:#1B3A3E;
+    --aqua:#34CFC8; --aqua-deep:#5FE0D9; --aqua-tint:#0C2E2C;
+    --brass:#D9B36A; --brass-lite:#E7C98C; --brass-tint:#241C0E;
+    --surface-2b:#0F2A2E;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#071417; --surface:#0C2226; --surface-2:#0F2A2E;
+    --ink:#EAF3F1; --ink-soft:#C4D8D5; --muted:#8FA9A7; --line:#1B3A3E;
+    --aqua:#34CFC8; --aqua-deep:#5FE0D9; --aqua-tint:#0C2E2C;
+    --brass:#D9B36A; --brass-lite:#E7C98C; --brass-tint:#241C0E;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(52,207,200,.28),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(217,179,106,.22),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,163,158,.26),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(95,224,217,.24),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(217,179,106,.20),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .pick .pimg{width:96px;height:96px;object-fit:contain;border-radius:var(--radius-sm);background:#fff;border:1px solid var(--line);padding:6px}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#7A5E28;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#E7C98C;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#E7C98C;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A7A76 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#075B58 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#34CFC8 !important;color:#052523 !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#5FE0D9}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#34CFC8 !important;color:#052523 !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Bidet Seats">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#16B4AE"/><stop offset=".7" stop-color="#0A5D5A"/><stop offset="1" stop-color="#07343A"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#CFA666" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#EAF3F1" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FCFB"/>
+      <path d="M16.7 20.3c.35 2 2.1 3.2 3.9 2.9" fill="none" stroke="#16B4AE" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#CFA666" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;Bidet&thinsp;Seats</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#panel">Side panel</a><a href="#remote">Remote</a><a href="#battery">Dead battery</a><a href="#compare">Compare</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/">Best Bidet Seats</a> · Side Panel vs Remote</nav>
+
+  <div style="padding-top:18px">
+    <img src="/images/hero-bidet-seat-controls-side-panel-vs-remote.webp" alt="Bidet toilet seat shown with its side control panel next to a handheld wireless remote" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;border-radius:20px;display:block">
+  </div>
+
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--brass-text)">Comparison · 2026</span>
+    <h1 class="serif">Side Panel or Remote? Choosing How You Control a Bidet Seat</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>September 7, 2026</b></span><span>Research-based</span></div>
+    <p class="disc">Best Bidet Seats is reader-supported. When you buy through our links we may earn a commission, at no extra cost to you. Commissions never change which products we recommend.</p>
+  </div>
+
+  <div class="prose">
+
+    <p>Nobody test-drives a bidet seat's controls before buying it. You compare heater type, price, and maybe the bowl shape, then the seat arrives, and within a week you've discovered a preference you never knew you had about how you tell the thing to spray water at you. That preference — side panel or remote — turns out to shape your daily experience more than almost any other spec on the box, and it's the one buyers spend the least time thinking about before checkout.</p>
+
+    <p>This isn't a trivial styling choice. A side panel is bolted to the seat and always exactly where the seat is. A remote is a separate object that lives wherever you last set it down, needs its own batteries, and can be lost, dropped in the bowl, or borrowed by a toddler. Both approaches work. Both have owners who wouldn't switch. The right one for you depends on things about your body, your bathroom, and your household that no spec sheet lists — which is exactly why we're laying them out here.</p>
+
+    <p>One honest note before we start: we don't run a fake testing lab, and we never pretend to. Everything in this guide comes from published product specifications, listed control types, and the patterns that repeat across thousands of verified owner reviews — including the complaints, which is where control-related trade-offs show up most clearly.</p>
+
+  </div>
+
+  <!-- QUICK ANSWER -->
+  <section id="verdict" style="padding-top:24px">
+    <div class="kicker"><span class="eyebrow">The short answer</span></div>
+    <h2 class="h2">If you just want the verdict</h2>
+    <div class="cols">
+      <div class="panel">
+        <span class="eyebrow">Go side panel if…</span>
+        <h3 class="serif">You want fewer moving parts</h3>
+        <p>A side panel is attached to the seat, so it's never missing and never dies on its own — it draws power straight from the seat. If reach isn't a problem for you, it's the simpler, lower-maintenance choice. The <a href="https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank" style="color:var(--aqua-deep)">Combier Electric Heated Bidet Seat</a> ($143.99) is a straightforward side-panel option worth a look.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Go remote if…</span>
+        <h3 class="serif">Reaching down and around bothers you</h3>
+        <p>A wireless remote lets you sit normally and adjust settings without twisting toward the seat's edge — the ergonomic upgrade most owners notice within the first week. The <a href="https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank" style="color:var(--aqua-deep)">Combier</a> and the <a href="https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank" style="color:var(--aqua-deep)">IYTATA Electric Bidet Seat</a> ($149.99) both ship with one.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="prose">
+
+    <div class="kicker" style="margin-top:8px"><span class="eyebrow">The side panel</span></div>
+    <h2 class="h2" id="panel">Reaching a side panel: the ergonomics nobody tests in store</h2>
+
+    <p style="margin-top:16px">A side control panel sits flush against the rim of the seat, usually on the right-hand side, with a row of buttons or a small dial for wash mode, pressure, seat temperature, and stop. It's wired directly into the seat, so it never loses power, never needs its own batteries, and can't end up on the wrong side of the bathroom. From a pure reliability standpoint, there is nothing simpler: fewer parts means fewer things to fail, lose, or forget to charge.</p>
+
+    <p>The catch is entirely physical, and it's the part nobody thinks to check before buying. To use a side panel, you have to reach down and to the side, often twisting at the waist, to find buttons you can't fully see from a seated position. For an able-bodied adult of average size, that's a minor, forgettable motion. For a lot of real households, it isn't: reviewers with limited shoulder mobility, larger body types, pregnancy, or recovery from surgery consistently describe the same problem — the reach is awkward, sometimes painful, and occasionally impossible without bracing on the wall or the seat itself. This is exactly the kind of ergonomic detail a showroom floor or a five-minute test sit can't reveal, because you're not actually seated and reaching in the position you'll use every single day.</p>
+
+    <p>Side panels also have a smaller, more common annoyance: pressing the wrong button in the dark. Most panels use small, similarly-shaped buttons distinguished mostly by position and a tiny icon, and a middle-of-the-night trip to the bathroom is not when most people want to hunt by touch for "stop" instead of "turbo." Some panels solve this with a slightly raised or textured stop button; check the product photos and listing description before buying if this matters to you, since it isn't a spec that's consistently documented.</p>
+
+    <p>None of this makes a side panel a bad choice — it's the majority approach in the category for a reason, and for anyone without a reach limitation, it's simply one motion, learned once and repeated without a second thought. It's worth being honest about who it's for: people who don't mind a small twist-and-reach, who want the fewest possible parts to manage, and who'd rather never think about a remote's battery level again.</p>
+
+    <div class="kicker" style="margin-top:34px"><span class="eyebrow">The remote</span></div>
+    <h2 class="h2" id="remote">Remotes: wall mount, batteries, and losing them</h2>
+
+    <p style="margin-top:16px">A wireless remote solves the reach problem completely — you hold it in your hand, at whatever angle is comfortable, and press whatever you want without moving your torso. It's the single ergonomic advantage remotes have over side panels, and it's a real one: reviewers who mention switching from a side-panel seat to a remote-equipped one almost always describe it as an upgrade they didn't expect to care about and then couldn't stop noticing.</p>
+
+    <p>That convenience comes with three trade-offs baked into the format itself.</p>
+
+    <p><strong>Batteries.</strong> A remote runs on its own small battery, typically a coin cell or a pair of AAAs depending on the model, and unlike the seat itself, it isn't hardwired to anything. It will eventually run down, and because it's a low-drain device used briefly several times a day, that can take a long time — long enough that most owners forget the remote uses batteries at all until the day it doesn't respond.</p>
+
+    <p><strong>Wall mounts.</strong> Most remote-equipped seats ship with a small adhesive or screw-mounted holster that sticks to the wall near the toilet, giving the remote a fixed home when it's not in your hand. Reviewers who install the mount and actually use it report far fewer "where did it go" moments than those who leave the remote loose on the tank lid or a nearby shelf — it's a small step that solves most of the format's biggest downside.</p>
+
+    <p><strong>Losing them.</strong> This is the complaint that shows up more than any other in remote-equipped seat reviews. A remote is a loose object in a small, humid room with a water feature in it, used by every member of a household, sometimes handed to kids who are curious about the buttons. It ends up on the floor, behind the tank, in a robe pocket that goes through the wash, or — reviewers report this often enough that it's a real pattern, not a one-off — dropped straight into the bowl. A wall mount cuts this risk dramatically but doesn't eliminate it if nobody's in the habit of putting it back.</p>
+
+    <p>None of these are dealbreakers on their own. They're just the price of the convenience: a remote gives you comfort a side panel can't match, in exchange for one more small object to keep track of.</p>
+
+    <div class="kicker" style="margin-top:34px"><span class="eyebrow">The failure mode</span></div>
+    <h2 class="h2" id="battery">What happens to a remote seat when the battery dies</h2>
+
+    <p style="margin-top:16px">This is the question that matters most before you buy a remote-controlled seat, and it's also the one buyers ask least until they're already dealing with it: if the remote's battery dies, or the remote goes missing entirely, can you still use the toilet normally?</p>
+
+    <p>On every seat we cover here, the answer is yes — the seat itself keeps functioning as a normal toilet seat regardless of the remote's battery state, because the remote only controls the wash and dryer features, not basic use. What you lose access to without a working remote is everything the bidet function adds: warm water, seat heat, drying, and any auto-open or voice features the model includes. You are not locked out of the bathroom; you're locked out of the bidet.</p>
+
+    <p>Where models differ is what backup control they offer, if any, while you replace the battery or hunt down the remote. Some remote-primary seats include a small set of manual buttons directly on the seat body, as a fallback for exactly this situation — check the listing photos closely, since this detail isn't always called out in the bullet points. If a physical fallback matters to you, recent reviews for the specific model are the best way to confirm it, since owners who've hit this situation tend to mention it.</p>
+
+    <p>The practical takeaway: a dead remote battery is an inconvenience, not an emergency, and it's almost always solved with a fresh battery from a drawer rather than a service call. Keep a spare battery of the correct type on hand — check the listing for whether your model uses a coin cell or AAAs — and the failure mode becomes a five-minute fix instead of a week without warm water.</p>
+
+    <div class="kicker" style="margin-top:34px"><span class="eyebrow">Beyond the buttons</span></div>
+    <h2 class="h2">Voice and auto-open, and whether they last</h2>
+
+    <p style="margin-top:16px">Some seats push the control question a step further with voice control and auto-open lids, both aimed at the same goal as a remote: reducing how much you have to physically touch or reach for. The <a href="https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">ZingPOP Bidet Toilet Seat</a> ($144.99) is the model in our lineup built around exactly this pairing — voice control alongside an auto-open lid — and it's worth understanding what that combination changes about daily use, and what it doesn't.</p>
+
+    <p>Voice control on a bidet seat typically handles a short list of commands — lid open and close, wash on and off, maybe a wash mode — rather than replacing every function a remote or panel offers. Reviewers who value it describe it as a genuine convenience for hands-free moments, not a full replacement for manual controls. Auto-open lids respond to proximity or motion, lifting the lid as you approach — more about the hygienic, hands-off feel of never touching the lid than about wash controls specifically.</p>
+
+    <p>The honest question with either feature is durability over years of use, not the first month. We don't have long-term teardown data on any specific unit's voice sensor or lid motor, and no manufacturer publishes a "years until failure" spec for these components — so the fair thing to say is that they add a moving part or a listening component beyond what a manual seat has, and more parts generally means more that can eventually need attention. That's a general mechanical principle, not a claim about this seat specifically. If either feature is the reason you're buying, recent reviews are the most current signal available on how a specific unit is holding up. What we can say with confidence is that both are wash-and-lid conveniences layered on top of the seat's core controls, not a replacement for them.</p>
+
+  </div>
+
+  <!-- COMPARE TABLE -->
+  <section id="compare">
+    <div class="kicker"><span class="eyebrow">At a glance</span></div>
+    <h2 class="h2">Side panel vs remote, side by side</h2>
+    <p class="sub">The four models we reference in this guide. Prices move on Amazon — confirm the live price before buying.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Model</th><th>Control type</th><th>Bowl</th><th>Price</th><th>What decides it</th><th></th></tr></thead>
+      <tbody>
+        <tr class="win"><td class="name">Combier Electric Heated Bidet Seat</td><td>Remote + side controls</td><td>Round</td><td class="price">$143.99</td><td>Heated seat, wash and dry, remote reach</td><td><a class="tget" href="https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name">ZingPOP Bidet Toilet Seat</td><td>Voice + auto-open</td><td>Elongated</td><td class="price">$144.99</td><td>Hands-free lid and voice commands</td><td><a class="tget" href="https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name">IYTATA Electric Bidet Seat</td><td>Remote</td><td>Elongated</td><td class="price">$149.99</td><td>Warm water and heated seat with remote control</td><td><a class="tget" href="https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name">WLJBIDET Toilet Seat Bidet O7L-1V</td><td>Side panel</td><td>Elongated</td><td class="price">$159.99</td><td>Warm water and drying with side controls</td><td><a class="tget" href="https://www.amazon.com/dp/B0CSSPQS7N?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- PICKS -->
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">The picks</span></div>
+    <h2 class="h2">Four models, two ways of controlling them</h2>
+    <div class="picks">
+
+      <article class="pick">
+        <img class="pimg" src="/images/amazon-B0DZH277RG.webp" alt="Combier Electric Heated Bidet Toilet Seat with remote control" width="96" height="96" loading="lazy" decoding="async">
+        <div>
+          <h3>Combier Electric Heated Bidet Toilet Seat</h3>
+          <div class="who">Best for avoiding the reach — round bowl</div>
+          <p class="body">A round-bowl electric seat with warm water wash, drying, a heated seat, and soft-close, controlled by remote rather than a side panel you'd have to twist toward. If your toilet takes a round seat and you'd rather adjust settings from a normal seated position, this is the straightforward option in our lineup.</p>
+        </div>
+        <div class="aside"><div class="pr">$143.99</div><span class="tag">Remote</span><a class="buy" href="https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <img class="pimg" src="/images/amazon-B0H4FHMZQS.webp" alt="ZingPOP Bidet Toilet Seat with voice control and auto open" width="96" height="96" loading="lazy" decoding="async">
+        <div>
+          <h3>ZingPOP Bidet Toilet Seat</h3>
+          <div class="who">Best for hands-free — voice control and auto-open</div>
+          <p class="body">Elongated, with voice control and an auto-open lid layered on top of heated water and a heated seat — the pick if minimizing what you touch matters more to you than which button does what. It goes furthest of the four toward hands-free operation, at the cost of more moving parts than a simple panel.</p>
+        </div>
+        <div class="aside"><div class="pr">$144.99</div><span class="tag">Voice · auto-open</span><a class="buy" href="https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <img class="pimg" src="/images/amazon-B0F8P2ZTSW.webp" alt="IYTATA Electric Bidet Toilet Seat with remote control" width="96" height="96" loading="lazy" decoding="async">
+        <div>
+          <h3>IYTATA Electric Bidet Toilet Seat</h3>
+          <div class="who">Best straightforward remote — elongated bowl</div>
+          <p class="body">An elongated electric seat with warm water and a heated seat, controlled by a handheld remote rather than a panel on the seat itself. A plain, no-extras remote setup for anyone who's decided remote is the format they want without needing voice or auto-open on top.</p>
+        </div>
+        <div class="aside"><div class="pr">$149.99</div><span class="tag">Remote</span><a class="buy" href="https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <img class="pimg" src="/images/amazon-B0CSSPQS7N.webp" alt="WLJBIDET Toilet Seat Bidet O7L-1V with side control panel" width="96" height="96" loading="lazy" decoding="async">
+        <div>
+          <h3>WLJBIDET Toilet Seat Bidet O7L-1V</h3>
+          <div class="who">Best side panel — nothing extra to lose</div>
+          <p class="body">Elongated, with warm water and drying controlled from a panel built into the seat rather than a separate remote. If you'd rather never think about a remote battery or a wall mount and don't mind reaching to the side of the seat, this is the format built for exactly that preference.</p>
+        </div>
+        <div class="aside"><div class="pr">$159.99</div><span class="tag">Side panel</span><a class="buy" href="https://www.amazon.com/dp/B0CSSPQS7N?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="prose">
+
+    <div class="kicker" style="margin-top:8px"><span class="eyebrow">The decision</span></div>
+    <h2 class="h2">Which control suits which bathroom</h2>
+
+    <p style="margin-top:16px"><strong>Choose a side panel if</strong> you don't have a reach or mobility limitation, you'd rather have one fewer object in the bathroom to keep track of, and you like the idea of controls that are physically part of the seat and can never be misplaced. It's the lower-maintenance format in the plainest sense: no batteries to buy, no wall mount to install, nothing that ends up on the floor. The <a href="https://www.amazon.com/dp/B0CSSPQS7N?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">WLJBIDET O7L-1V</a> is a straightforward example if this is your preference.</p>
+
+    <p><strong>Choose a remote if</strong> twisting toward the seat's edge is uncomfortable for any reason, more than one person in the household uses the seat and each wants their own settings without leaning over, or you simply prefer adjusting things without having to look for buttons on the seat itself. Install the wall mount on day one — it's the single habit that prevents most of the "where's the remote" frustration reviewers describe. The <a href="https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">Combier</a> and <a href="https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">IYTATA</a> both fit this preference without adding voice or auto-open on top.</p>
+
+    <p><strong>Choose voice and auto-open if</strong> you've already decided you want a remote-style, hands-off experience and are willing to accept a couple more moving parts — a lid motor, a microphone — in exchange for not touching the seat or a remote at all. The <a href="https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20" rel="nofollow sponsored noopener" target="_blank">ZingPOP</a> is the model here built specifically around that combination.</p>
+
+    <p>Bowl shape narrows the field before control type even enters the picture — the Combier is round-bowl only, while the ZingPOP, IYTATA and WLJBIDET are elongated, so measure your toilet first. If you're not sure which shape you have, our <a href="/best-bidet-seats-for-elongated-toilets">best bidet seats for elongated toilets</a> guide covers how to check. And if control type feels like a smaller decision than warm water reliability, our <a href="/how-long-warm-water-lasts-on-a-bidet-seat">how long the warm water lasts</a> guide tackles the spec most buyers actually regret skipping.</p>
+
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Side panel vs remote: common questions</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>If the remote breaks or the battery dies, can I still use the toilet?</summary><p>Yes. On every seat in this guide, the seat functions as a normal toilet seat regardless of the remote's condition — a dead or missing remote only takes away the wash, dry, and heat features it controls, not basic use of the toilet. Some remote-primary seats include manual backup buttons on the seat itself; check the listing photos for the specific model if that fallback matters to you.</p></details>
+      <details><summary>Is a side panel harder to use than a remote?</summary><p>Not inherently — it just requires a small reach and twist toward the edge of the seat, which most users adapt to within days. It becomes a real drawback specifically for people with limited shoulder or torso mobility, larger body types, or anyone recovering from surgery, where the reach itself can be uncomfortable. For everyone else, it's mainly a matter of preference.</p></details>
+      <details><summary>What kind of batteries do bidet seat remotes use?</summary><p>It varies by model — some use a small coin cell, others a pair of AAA batteries. Check the specific listing for your model rather than assuming, and keep a spare of the correct type on hand so a dead remote is a five-minute fix rather than a day without wash and heat functions.</p></details>
+      <details><summary>Do voice control and auto-open lids wear out faster than manual controls?</summary><p>They add parts that manual controls don't have — a lid motor for auto-open, a microphone and listening circuit for voice — and more parts generally means more that can eventually need attention, as a general mechanical principle rather than a claim about any specific unit. We don't have long-term failure-rate data for these components on any model here, so if durability of these specific features is your main concern, recent owner reviews for that model are the most current signal available.</p></details>
+    </div>
+  </section>
+
+  <!-- KEEP READING -->
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next steps, whichever control you pick</h2>
+    <div class="keep">
+      <a href="/best-bidet-seats-for-elongated-toilets"><span class="kt">The Best Bidet Seats for Elongated Toilets</span><span class="kd">Measure your bowl first — most of the remote and voice-control options here are elongated-only.</span></a>
+      <a href="/how-long-warm-water-lasts-on-a-bidet-seat"><span class="kt">How Long the Warm Water Lasts on a Bidet Seat</span><span class="kd">Reservoir vs instant heating, and why it matters more than which button you press.</span></a>
+      <a href="/best-bidet-seats-for-small-bathrooms"><span class="kt">The Best Bidet Seats for Small Bathrooms</span><span class="kd">Where a remote's wall mount actually helps in a tight footprint, and where it gets in the way.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Bidet Seats</div>
+  <p>Independent, research-based comparisons of bidet toilet seats and attachments.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specs and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on. As an Amazon Associate, we earn from qualifying purchases. <a href="/">Amazon</a>. © 2026 Best Bidet Seats.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+ "headline":"Side Panel or Remote? Choosing How You Control a Bidet Seat",
+ "description":"The control type decides how the seat feels every single day, and it is the spec buyers think about least.",
+ "author":{"@type":"Person","name":"Ilane Tall"},
+ "publisher":{"@type":"Organization","name":"Best Bidet Seats","url":"https://bestbidetseats.com/"},
+ "datePublished":"2026-09-07",
+ "dateModified":"2026-09-07",
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://bestbidetseats.com/bidet-seat-controls-side-panel-vs-remote"},
+ "image":"https://bestbidetseats.com/images/hero-bidet-seat-controls-side-panel-vs-remote.webp"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"If the remote breaks or the battery dies, can I still use the toilet?","acceptedAnswer":{"@type":"Answer","text":"Yes. On every seat in this guide, the seat functions as a normal toilet seat regardless of the remote's condition — a dead or missing remote only takes away the wash, dry, and heat features it controls, not basic use of the toilet. Some remote-primary seats include manual backup buttons on the seat itself; check the listing photos for the specific model if that fallback matters to you."}},
+ {"@type":"Question","name":"Is a side panel harder to use than a remote?","acceptedAnswer":{"@type":"Answer","text":"Not inherently — it just requires a small reach and twist toward the edge of the seat, which most users adapt to within days. It becomes a real drawback specifically for people with limited shoulder or torso mobility, larger body types, or anyone recovering from surgery, where the reach itself can be uncomfortable. For everyone else, it's mainly a matter of preference."}},
+ {"@type":"Question","name":"What kind of batteries do bidet seat remotes use?","acceptedAnswer":{"@type":"Answer","text":"It varies by model — some use a small coin cell, others a pair of AAA batteries. Check the specific listing for your model rather than assuming, and keep a spare of the correct type on hand so a dead remote is a five-minute fix rather than a day without wash and heat functions."}},
+ {"@type":"Question","name":"Do voice control and auto-open lids wear out faster than manual controls?","acceptedAnswer":{"@type":"Answer","text":"They add parts that manual controls don't have — a lid motor for auto-open, a microphone and listening circuit for voice — and more parts generally means more that can eventually need attention, as a general mechanical principle rather than a claim about any specific unit. We don't have long-term failure-rate data for these components on any model here, so recent owner reviews are the most current signal available."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Side panel vs remote bidet seats referenced","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Combier Electric Heated Bidet Toilet Seat Round, Wash Dry Soft Close Remote","brand":{"@type":"Brand","name":"Combier"},"url":"https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20","offers":{"@type":"Offer","priceCurrency":"USD","price":"143.99","url":"https://www.amazon.com/dp/B0DZH277RG?tag=bestbidettoilets-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"ZingPOP Bidet Toilet Seat, Voice Control, Auto Open, Heated Water, Elongated","brand":{"@type":"Brand","name":"ZingPOP"},"url":"https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20","offers":{"@type":"Offer","priceCurrency":"USD","price":"144.99","url":"https://www.amazon.com/dp/B0H4FHMZQS?tag=bestbidettoilets-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"IYTATA Electric Bidet Toilet Seat, Elongated, Warm Water, Heated Seat","brand":{"@type":"Brand","name":"IYTATA"},"url":"https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20","offers":{"@type":"Offer","priceCurrency":"USD","price":"149.99","url":"https://www.amazon.com/dp/B0F8P2ZTSW?tag=bestbidettoilets-20"}}},
+ {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"WLJBIDET Toilet Seat Bidet with Warm Water and Drying, O7L-1V, Elongated","brand":{"@type":"Brand","name":"WLJBIDET"},"url":"https://www.amazon.com/dp/B0CSSPQS7N?tag=bestbidettoilets-20","offers":{"@type":"Offer","priceCurrency":"USD","price":"159.99","url":"https://www.amazon.com/dp/B0CSSPQS7N?tag=bestbidettoilets-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>
