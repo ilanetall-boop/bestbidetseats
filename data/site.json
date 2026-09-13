@@ -285,6 +285,16 @@
       "minutes": 14,
       "date": "2026-09-07",
       "featured": true
+    },
+    {
+      "slug": "what-a-bidet-seat-does-when-the-power-goes-out",
+      "title": "What Your Bidet Seat Does When the Power Goes Out",
+      "description": "Heated seats, warm water and dryers all stop. The wash does not have to — if you chose the right kind.",
+      "category": "Guide",
+      "hero": "hero-what-a-bidet-seat-does-when-the-power-goes-out",
+      "minutes": 13,
+      "date": "2026-09-13",
+      "featured": true
     }
   ]
 }
