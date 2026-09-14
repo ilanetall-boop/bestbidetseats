@@ -295,6 +295,16 @@
       "minutes": 13,
       "date": "2026-09-13",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-with-auto-open-and-voice-control",
+      "title": "Bidet Seats That Open by Themselves (and Answer You)",
+      "description": "Auto-open lids and voice control have dropped under $300. What they actually add, and what they add to the failure list.",
+      "category": "Roundup",
+      "hero": "hero-bidet-seats-with-auto-open-and-voice-control",
+      "minutes": 13,
+      "date": "2026-09-14",
+      "featured": true
     }
   ]
 }
