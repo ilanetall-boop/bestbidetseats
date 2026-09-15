@@ -305,6 +305,16 @@
       "minutes": 13,
       "date": "2026-09-14",
       "featured": true
+    },
+    {
+      "slug": "toto-washlet-vs-kohler-purewash",
+      "title": "TOTO Washlet vs KOHLER PureWash: Where the Money Goes",
+      "description": "Two brands own the premium bidet-seat shelf. The gap is not the wash — it is the warm water, the lid and what happens after five years.",
+      "category": "Comparison",
+      "hero": "hero-toto-washlet-vs-kohler-purewash",
+      "minutes": 13,
+      "date": "2026-09-15",
+      "featured": true
     }
   ]
 }
