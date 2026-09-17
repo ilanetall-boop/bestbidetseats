@@ -325,6 +325,16 @@
       "minutes": 14,
       "date": "2026-09-16",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-and-septic-systems",
+      "title": "Bidet Seats and Septic Systems: What You Need to Know",
+      "description": "A bidet adds a small amount of water and nothing else to what leaves the bowl. Here is the honest, plumbing-informed answer on whether that matters for a septic tank.",
+      "category": "Guide",
+      "hero": "hero-bidet-seats-and-septic-systems",
+      "minutes": 14,
+      "date": "2026-09-17",
+      "featured": true
     }
   ]
 }
