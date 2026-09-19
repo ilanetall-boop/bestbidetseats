@@ -345,6 +345,16 @@
       "minutes": 14,
       "date": "2026-09-18",
       "featured": true
+    },
+    {
+      "slug": "installing-a-bidet-without-a-spare-valve",
+      "title": "Installing a Bidet Seat Without a Spare Valve",
+      "description": "Older homes sometimes have a single angle stop and no room for a second outlet. The kits that solve it, and the one part that makes the whole job possible.",
+      "category": "How-to",
+      "hero": "hero-installing-a-bidet-without-a-spare-valve",
+      "minutes": 14,
+      "date": "2026-09-19",
+      "featured": true
     }
   ]
 }
