@@ -365,6 +365,16 @@
       "minutes": 12,
       "date": "2026-09-20",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-with-night-light-features",
+      "title": "Bidet Seats With Night-Light Features, Compared",
+      "description": "A soft glow from the bowl at 2 a.m. beats flipping on the overhead light. Which seats actually have one, and how much it really helps.",
+      "category": "Roundup",
+      "hero": "hero-bidet-seats-with-night-light-features",
+      "minutes": 14,
+      "date": "2026-09-21",
+      "featured": true
     }
   ]
 }
