@@ -415,6 +415,16 @@
       "minutes": 13,
       "date": "2026-09-25",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-with-a-digital-led-display",
+      "title": "Bidet Seats With a Digital LED Display, Compared",
+      "description": "A screen that shows the water temperature instead of making you guess from a dial position. The four listings that actually have one, and what each displays.",
+      "category": "Guide",
+      "hero": "hero-bidet-seats-with-a-digital-led-display",
+      "minutes": 14,
+      "date": "2026-09-26",
+      "featured": true
     }
   ]
 }
