@@ -147,6 +147,48 @@ if (llms.includes('<!--LLMS-GUIDES:START-->')) {
 }
 write('llms.txt', llms);
 
+/* ---------------- 4b. mesure d'audience (Clarity + GA4) ---------------- */
+/* Ces pages ont ete publiees pendant des semaines sans aucun capteur : ni Clarity,
+   ni GA4, ni propriete GSC. install-clarity-tracking.js porte le garde-fou
+   `pipeline !== 'premium'` qui protege ce gabarit fait main — il a donc aussi
+   empeche de poser la mesure, et « 0 session » ne voulait pas dire « pas de
+   trafic » mais « pas d'instrument ». Sans mesure, l'article 5 de la Constitution
+   (mesurer une cohorte avant de financer la suivante) ne peut pas s'appliquer.
+
+   La pose est ici, et pas dans le HTML, parce que ce script tourne a CHAQUE
+   publication et sert de porte : une page neuve est instrumentee le jour ou elle
+   parait, et le verificateur ci-dessous refuse une page qui ne l'est pas. Les
+   identifiants vivent dans data/site.json (site.analytics), pas en dur ici : le
+   jour ou un GA4 existe, c'est une ligne de donnees a changer, pas du code. */
+const AN = SITE.analytics || {};
+function clarityTag() {
+  return '<script type="text/javascript">\n'
+    + '(function(c,l,a,r,i,t,y){\n'
+    + '    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n'
+    + '    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;\n'
+    + '    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n'
+    + '})(window, document, "clarity", "script", "' + AN.clarity_id + '");\n'
+    + '</script>';
+}
+function gaTag() {
+  return '<script async src="https://www.googletagmanager.com/gtag/js?id=' + AN.ga_id + '"></script>\n'
+    + '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}\n'
+    + "gtag('js', new Date());gtag('config', '" + AN.ga_id + "');</script>";
+}
+const manqueMesure = [];
+for (const f of fs.readdirSync(ROOT).filter(x => x.endsWith('.html'))) {
+  const p = path.join(ROOT, f);
+  const h = fs.readFileSync(p, 'utf8');
+  const bouts = [];
+  if (AN.clarity_id && !h.includes('clarity.ms/tag/')) bouts.push(clarityTag());
+  if (AN.ga_id && !h.includes(AN.ga_id)) bouts.push(gaTag());
+  if (!bouts.length) continue;
+  if (!h.includes('</head>')) { manqueMesure.push(f + ' (pas de </head>)'); continue; }
+  if (VERIFY_ONLY) { manqueMesure.push(f); continue; }
+  fs.writeFileSync(p, h.replace('</head>', bouts.join('\n') + '\n</head>'));
+}
+if (manqueMesure.length) console.log('  mesure absente sur: ' + manqueMesure.join(', '));
+
 /* ---------------- 5. VERIFIER ---------------- */
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
 const imgs = new Set(fs.existsSync(path.join(ROOT, 'images')) ? fs.readdirSync(path.join(ROOT, 'images')) : []);
@@ -162,6 +204,8 @@ const report = [];
 for (const f of htmlFiles) {
   const h = VERIFY_ONLY ? read(f) : fs.readFileSync(path.join(ROOT, f), 'utf8');
   const probs = [];
+  if (AN.clarity_id && !h.includes('clarity.ms/tag/')) probs.push('MISSING analytics (Clarity)');
+  if (AN.ga_id && !h.includes(AN.ga_id)) probs.push('MISSING analytics (GA4)');
   const cleaned = h.replace(honestNeg, '');
   const m = cleaned.match(forbidden); if (m) probs.push('FORBIDDEN CLAIM: "' + m[0] + '"');
   const amz = (h.match(/amazon\.com\/dp\/[A-Z0-9]{10}[^"]*/g) || []);
