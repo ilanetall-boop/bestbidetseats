@@ -429,6 +429,16 @@
       "minutes": 14,
       "date": "2026-09-26",
       "featured": true
+    },
+    {
+      "slug": "gaicom-bidet-seat-lineup-reviewed",
+      "title": "The GAICOM Bidet Seat Lineup, Reviewed",
+      "description": "Three GAICOM electric bidet seats, three price points from $200 to $280. What actually changes as the price climbs within one brand's own catalogue.",
+      "category": "Roundup",
+      "hero": "hero-gaicom-bidet-seat-lineup-reviewed",
+      "minutes": 14,
+      "date": "2026-09-28",
+      "featured": true
     }
   ]
 }
