@@ -449,6 +449,16 @@
       "minutes": 15,
       "date": "2026-09-29",
       "featured": true
+    },
+    {
+      "slug": "vovo-bidet-seat-lineup-reviewed",
+      "title": "The VOVO Bidet Seat Lineup, Reviewed",
+      "description": "From a $79 non-electric Nature seat to a $399 heated VB-4000SE, VOVO sells four very different bidet seats. What separates them, and which tier is worth the jump.",
+      "category": "Roundup",
+      "hero": "hero-vovo-bidet-seat-lineup-reviewed",
+      "minutes": 14,
+      "date": "2026-10-01",
+      "featured": true
     }
   ]
 }
