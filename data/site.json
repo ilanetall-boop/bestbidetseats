@@ -489,6 +489,16 @@
       "minutes": 14,
       "date": "2026-10-04",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-for-rv-and-off-grid-bathrooms",
+      "title": "Bidet Seats for RVs and Off-Grid Bathrooms",
+      "description": "No reliable shore power and low water pressure rule out most electric seats. The non-electric options that work on a rig or a cabin with a basic gravity-fed line.",
+      "category": "Guide",
+      "hero": "hero-bidet-seats-for-rv-and-off-grid-bathrooms",
+      "minutes": 14,
+      "date": "2026-10-05",
+      "featured": true
     }
   ]
 }
