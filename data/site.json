@@ -529,6 +529,16 @@
       "minutes": 13,
       "date": "2026-10-08",
       "featured": true
+    },
+    {
+      "slug": "bidet-seats-and-home-resale-value",
+      "title": "Do Bidet Seats Help or Hurt Home Resale Value?",
+      "description": "A neutral, well-known seat can read as a thoughtful upgrade to a buyer. A flashy remote-control model with a night light can just as easily read as clutter. What to leave in before you list.",
+      "category": "Buying advice",
+      "hero": "hero-bidet-seats-and-home-resale-value",
+      "minutes": 14,
+      "date": "2026-10-09",
+      "featured": true
     }
   ]
 }
