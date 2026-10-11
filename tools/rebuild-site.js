@@ -176,18 +176,58 @@ function gaTag() {
     + "gtag('js', new Date());gtag('config', '" + AN.ga_id + "');</script>";
 }
 const manqueMesure = [];
+const corriges = [];
 for (const f of fs.readdirSync(ROOT).filter(x => x.endsWith('.html'))) {
   const p = path.join(ROOT, f);
   const h = fs.readFileSync(p, 'utf8');
   const bouts = [];
-  if (AN.clarity_id && !h.includes('clarity.ms/tag/')) bouts.push(clarityTag());
-  if (AN.ga_id && !h.includes(AN.ga_id)) bouts.push(gaTag());
+  // L'identifiant REELLEMENT pose, pas la simple presence d'un tag. Un gabarit
+  // clone apporte le tag du blog d'origine : se contenter de `includes('clarity.ms/tag/')`
+  // conclut « deja instrumente » et envoie le trafic dans le projet d'un autre blog
+  // (best-heated-blankets -> best-reverse-osmosis-systems, 11 jours, 2026-09/10).
+  const idPose = (h.match(/"clarity",\s*"script",\s*"([^"]*)"/) || [])[1] || null;
+  if (AN.clarity_id && idPose && idPose !== AN.clarity_id) {
+    if (VERIFY_ONLY) { manqueMesure.push(f + ' (identifiant etranger ' + idPose + ')'); continue; }
+    fs.writeFileSync(p, h.replace(/("clarity",\s*"script",\s*")[^"]*(")/, '$1' + AN.clarity_id + '$2'));
+    corriges.push(f + ': ' + idPose + ' -> ' + AN.clarity_id);
+    continue;
+  }
+  // Aucun identifiant configure MAIS un mouchard present : c'est forcement un
+  // mouchard herite d'un gabarit clone. Le laisser revient a mesurer pour le
+  // blog voisin — le cas exact de best-heated-blankets, onze jours durant.
+  if (!AN.clarity_id && idPose) {
+    if (VERIFY_ONLY) { manqueMesure.push(f + ' (mouchard herite ' + idPose + ', aucun identifiant configure)'); continue; }
+    fs.writeFileSync(p, h.replace(/<script[^>]*>\s*\(function\(c,l,a,r,i,t,y\)[\s\S]*?<\/script>\s*/i, ''));
+    corriges.push(f + ': mouchard herite ' + idPose + ' retire');
+    continue;
+  }
+  if (AN.clarity_id && !idPose) bouts.push(clarityTag());
+  // Meme regle que pour Clarity : absent -> injecte, etranger -> remplace,
+  // herite (aucun identifiant configure) -> retire. Un blog neuf a ga_id a null,
+  // donc l'ancienne condition laissait le GA4 du gabarit clone mesurer a sa place.
+  const gaPose = (h.match(/gtag\/js\?id=(G-[A-Z0-9]+)/) || [])[1] || null;
+  if (gaPose && AN.ga_id && gaPose !== AN.ga_id) {
+    if (VERIFY_ONLY) { manqueMesure.push(f + ' (GA4 etranger ' + gaPose + ')'); continue; }
+    fs.writeFileSync(p, h.split(gaPose).join(AN.ga_id));
+    corriges.push(f + ': GA4 ' + gaPose + ' -> ' + AN.ga_id);
+    continue;
+  }
+  if (gaPose && !AN.ga_id) {
+    if (VERIFY_ONLY) { manqueMesure.push(f + ' (GA4 herite ' + gaPose + ', aucun identifiant configure)'); continue; }
+    fs.writeFileSync(p, h
+      .replace(/<script[^>]*googletagmanager\.com\/gtag\/js[^>]*><\/script>\s*/gi, '')
+      .replace(/<script>\s*window\.dataLayer[\s\S]*?<\/script>\s*/gi, ''));
+    corriges.push(f + ': GA4 herite ' + gaPose + ' retire');
+    continue;
+  }
+  if (AN.ga_id && !gaPose) bouts.push(gaTag());
   if (!bouts.length) continue;
   if (!h.includes('</head>')) { manqueMesure.push(f + ' (pas de </head>)'); continue; }
   if (VERIFY_ONLY) { manqueMesure.push(f); continue; }
   fs.writeFileSync(p, h.replace('</head>', bouts.join('\n') + '\n</head>'));
 }
 if (manqueMesure.length) console.log('  mesure absente sur: ' + manqueMesure.join(', '));
+if (corriges.length) console.log('  identifiant Clarity corrige sur ' + corriges.length + ' page(s): ' + corriges.slice(0, 3).join(' | '));
 
 /* ---------------- 5. VERIFIER ---------------- */
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
@@ -204,8 +244,16 @@ const report = [];
 for (const f of htmlFiles) {
   const h = VERIFY_ONLY ? read(f) : fs.readFileSync(path.join(ROOT, f), 'utf8');
   const probs = [];
-  if (AN.clarity_id && !h.includes('clarity.ms/tag/')) probs.push('MISSING analytics (Clarity)');
-  if (AN.ga_id && !h.includes(AN.ga_id)) probs.push('MISSING analytics (GA4)');
+  // Meme regle que la pose : un identifiant ETRANGER doit bloquer le deploiement,
+  // sinon le verificateur se declare propre pendant qu'un blog mesure pour un autre.
+  const idVu = (h.match(/"clarity",\s*"script",\s*"([^"]*)"/) || [])[1] || null;
+  if (!AN.clarity_id && idVu) probs.push('INHERITED analytics (Clarity): ' + idVu + ' alors qu aucun identifiant n est configure');
+  else if (AN.clarity_id && !idVu) probs.push('MISSING analytics (Clarity)');
+  else if (AN.clarity_id && idVu !== AN.clarity_id) probs.push('WRONG analytics (Clarity): ' + idVu + ' au lieu de ' + AN.clarity_id);
+  const gaVu = (h.match(/gtag\/js\?id=(G-[A-Z0-9]+)/) || [])[1] || null;
+  if (!AN.ga_id && gaVu) probs.push('INHERITED analytics (GA4): ' + gaVu + ' alors qu aucun identifiant n est configure');
+  else if (AN.ga_id && gaVu && gaVu !== AN.ga_id) probs.push('WRONG analytics (GA4): ' + gaVu + ' au lieu de ' + AN.ga_id);
+  else if (AN.ga_id && !gaVu) probs.push('MISSING analytics (GA4)');
   const cleaned = h.replace(honestNeg, '');
   const m = cleaned.match(forbidden); if (m) probs.push('FORBIDDEN CLAIM: "' + m[0] + '"');
   const amz = (h.match(/amazon\.com\/dp\/[A-Z0-9]{10}[^"]*/g) || []);
