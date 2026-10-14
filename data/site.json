@@ -589,6 +589,16 @@
       "minutes": 12,
       "date": "2026-10-14",
       "featured": true
+    },
+    {
+      "slug": "unlimited-warm-water-claims-on-bidet-seats",
+      "title": "'Unlimited Warm Water' on a Bidet Seat: What the Claim Actually Means",
+      "description": "One listing promises unlimited warm water. Another promises adjustable warm water instead. Only one model in the catalogue actually explains the engineering behind either claim.",
+      "category": "Honest take",
+      "hero": "hero-unlimited-warm-water-claims-on-bidet-seats",
+      "minutes": 14,
+      "date": "2026-10-15",
+      "featured": true
     }
   ]
 }
