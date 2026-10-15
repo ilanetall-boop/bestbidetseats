@@ -599,6 +599,16 @@
       "minutes": 14,
       "date": "2026-10-15",
       "featured": true
+    },
+    {
+      "slug": "touch-panel-vs-physical-controls-on-bidet-seats",
+      "title": "Touch-Panel Bidet Seats vs Physical Side-Panel Buttons: Which Wears Better?",
+      "description": "A touch panel looks sleeker in the listing photo. A physical button panel still works with wet hands and a shaky grip. What the control surface actually changes day to day.",
+      "category": "Comparison",
+      "hero": "hero-touch-panel-vs-physical-controls-on-bidet-seats",
+      "minutes": 13,
+      "date": "2026-10-16",
+      "featured": true
     }
   ]
 }
