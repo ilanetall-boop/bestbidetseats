@@ -639,6 +639,16 @@
       "minutes": 11,
       "date": "2026-10-19",
       "featured": true
+    },
+    {
+      "slug": "toto-round-bowl-washlets-s2-vs-kc2",
+      "title": "TOTO's Two Round Washlets: S2 vs KC2, What the $76 Gap Buys",
+      "description": "TOTO sells two electronic seats built for round bowls, about $76 apart. One lists instantaneous heating and EWATER+ wand cleaning; the other doesn't mention either. What actually separates them, with a budget round seat on the page for scale.",
+      "category": "Comparison",
+      "hero": "hero-toto-round-bowl-washlets-s2-vs-kc2",
+      "minutes": 13,
+      "date": "2026-10-20",
+      "featured": true
     }
   ]
 }
