@@ -689,6 +689,16 @@
       "minutes": 12,
       "date": "2026-10-24",
       "featured": true
+    },
+    {
+      "slug": "delta-faucet-refresh-standard-vs-premium-bidet-seats",
+      "title": "Delta's Refresh Standard vs Refresh Premium: What the Extra $25 Actually Changes",
+      "description": "Delta Faucet sells two electric bidet seats $25 apart under the same Refresh name. What the Premium tier adds over Standard, measured against a third seat at nearly the same price from outside the brand.",
+      "category": "Comparison",
+      "hero": "hero-delta-faucet-refresh-standard-vs-premium-bidet-seats",
+      "minutes": 13,
+      "date": "2026-10-25",
+      "featured": true
     }
   ]
 }
