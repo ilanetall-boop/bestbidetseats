@@ -719,6 +719,16 @@
       "minutes": 14,
       "date": "2026-10-27",
       "featured": true
+    },
+    {
+      "slug": "luxe-bidet-lineup-reviewed",
+      "title": "The LUXE Bidet Lineup, Reviewed",
+      "description": "LUXE sells three non-electric attachments, including the only one in our catalogue that isn't white. What separates the NEO 120 from the NEO 185, and whether blue costs anything extra.",
+      "category": "Roundup",
+      "hero": "hero-luxe-bidet-lineup-reviewed",
+      "minutes": 13,
+      "date": "2026-10-28",
+      "featured": true
     }
   ]
 }
