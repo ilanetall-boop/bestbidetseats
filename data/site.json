@@ -739,6 +739,16 @@
       "minutes": 13,
       "date": "2026-10-29",
       "featured": true
+    },
+    {
+      "slug": "mijic-vs-kiogro-same-price-different-features",
+      "title": "MIJIC vs KioGro: Same $130 Price, Two Very Different Feature Lists",
+      "description": "MIJIC's listing names three things: heated seat, warm water, air dryer. KioGro's, at $1.75 more, names a touch panel, self-cleaning nozzle, deodorizer, LED display and night light on top of them. What that gap actually means.",
+      "category": "Comparison",
+      "hero": "hero-mijic-vs-kiogro-same-price-different-features",
+      "minutes": 13,
+      "date": "2026-10-30",
+      "featured": true
     }
   ]
 }
