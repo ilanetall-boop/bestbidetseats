@@ -759,6 +759,16 @@
       "minutes": 13,
       "date": "2026-10-31",
       "featured": true
+    },
+    {
+      "slug": "does-a-bidet-seat-void-your-toilet-warranty",
+      "title": "Does Installing a Bidet Seat Void Your Toilet's Warranty?",
+      "description": "The bidet seat has its own warranty. The toilet underneath it has a separate one, from a separate manufacturer. What installing a seat actually does and doesn't put at risk.",
+      "category": "Buying advice",
+      "hero": "hero-does-a-bidet-seat-void-your-toilet-warranty",
+      "minutes": 13,
+      "date": "2026-11-01",
+      "featured": true
     }
   ]
 }
