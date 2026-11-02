@@ -769,6 +769,16 @@
       "minutes": 13,
       "date": "2026-11-01",
       "featured": true
+    },
+    {
+      "slug": "kohler-purewash-lineup-reviewed",
+      "title": "The Kohler PureWash Lineup, Reviewed",
+      "description": "Kohler sells manual seats under $120 and electric ones from $270 to $379 under the same PureWash name. What separates the M-series from the E-series, the way our GAICOM, VOVO and LUXE lineup reviews compare theirs.",
+      "category": "Roundup",
+      "hero": "hero-kohler-purewash-lineup-reviewed",
+      "minutes": 12,
+      "date": "2026-11-02",
+      "featured": true
     }
   ]
 }
