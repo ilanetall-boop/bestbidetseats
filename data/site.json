@@ -789,6 +789,16 @@
       "minutes": 12,
       "date": "2026-11-03",
       "featured": true
+    },
+    {
+      "slug": "combier-round-vs-elongated-same-price",
+      "title": "Combier's Round and Elongated Bidet Seats Cost Exactly the Same: What You're Actually Choosing",
+      "description": "Both Combier electric seats list at $143.99, one built for a round bowl and one for elongated. With price taken off the table, what's left to decide between them.",
+      "category": "Comparison",
+      "hero": "hero-combier-round-vs-elongated-same-price",
+      "minutes": 11,
+      "date": "2026-11-04",
+      "featured": true
     }
   ]
 }
