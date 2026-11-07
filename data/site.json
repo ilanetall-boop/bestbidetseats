@@ -819,6 +819,16 @@
       "minutes": 14,
       "date": "2026-11-06",
       "featured": true
+    },
+    {
+      "slug": "toto-washlet-s2-round-vs-elongated-price",
+      "title": "TOTO's S2 Washlet: Why the Round Version Costs $25 More Than Elongated",
+      "description": "Same washlet, same instantaneous heating, same EWATER+ cleaning — but TOTO's S2 Round lists at $445.69 against $420.00 for S2 Elongated. What the smaller bowl shape costs more to build.",
+      "category": "Comparison",
+      "hero": "hero-toto-washlet-s2-round-vs-elongated-price",
+      "minutes": 13,
+      "date": "2026-11-07",
+      "featured": true
     }
   ]
 }
