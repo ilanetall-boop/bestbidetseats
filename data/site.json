@@ -909,6 +909,16 @@
       "minutes": 14,
       "date": "2026-11-15",
       "featured": true
+    },
+    {
+      "slug": "yasashi-stream-vs-gaicom-same-price-different-spec-sheet",
+      "title": "Same $179.99, Very Different Spec Sheets: Yasashi Stream vs GAICOM's Entry Bidet Seat",
+      "description": "Both seats list at exactly $179.99. Yasashi Stream names 6 wash modes, tankless instant heating and dual remote-plus-side-knob control. GAICOM's entry model names 3-level seat heat and two wash modes with no dryer mentioned. Identical price, very different feature count.",
+      "category": "Comparison",
+      "hero": "hero-yasashi-stream-vs-gaicom-same-price-different-spec-sheet",
+      "minutes": 11,
+      "date": "2026-11-16",
+      "featured": true
     }
   ]
 }
